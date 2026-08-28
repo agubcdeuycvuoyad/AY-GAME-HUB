@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +25,6 @@ body {
 }
 
 /* NAVBAR */
-
 header {
     position: sticky;
     top: 0;
@@ -66,7 +64,6 @@ nav {
 }
 
 /* HERO */
-
 .hero {
     text-align: center;
     padding: 110px 20px 90px;
@@ -103,7 +100,6 @@ nav {
 }
 
 /* MAIN */
-
 main {
     max-width: 1200px;
     margin: auto;
@@ -121,7 +117,6 @@ main {
 }
 
 /* SEARCH */
-
 .search-box {
     width: 100%;
     padding: 15px 18px;
@@ -139,7 +134,6 @@ main {
 }
 
 /* CATEGORIES */
-
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -165,16 +159,13 @@ main {
 }
 
 /* GAME GRID */
-
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
-    width: 100%;
 }
 
-/* GAME CARDS */
-
+/* GAME CARD */
 .game-card {
     display: flex;
     flex-direction: column;
@@ -194,7 +185,6 @@ main {
 }
 
 .game-image {
-    width: 100%;
     height: 160px;
     display: flex;
     align-items: center;
@@ -245,7 +235,6 @@ main {
 }
 
 /* NO RESULTS */
-
 .no-results {
     display: none;
     text-align: center;
@@ -255,7 +244,6 @@ main {
 }
 
 /* QR CODE */
-
 .qr-section {
     max-width: 700px;
     margin: 70px auto 20px;
@@ -292,7 +280,6 @@ main {
 }
 
 /* FOOTER */
-
 footer {
     text-align: center;
     padding: 30px 20px;
@@ -302,7 +289,6 @@ footer {
 }
 
 /* MOBILE */
-
 @media (max-width: 600px) {
     nav {
         padding: 15px;
@@ -334,8 +320,6 @@ footer {
 
 <body>
 
-<!-- NAVBAR -->
-
 <header>
     <nav>
         <div class="logo">🎮 AY GAME HUB</div>
@@ -347,8 +331,6 @@ footer {
         </div>
     </nav>
 </header>
-
-<!-- HERO -->
 
 <section class="hero" id="home">
     <h1>PLAY. <span>COMPETE.</span> WIN.</h1>
@@ -363,17 +345,10 @@ footer {
     </button>
 </section>
 
-<!-- GAMES -->
-
 <main id="games">
 
     <h2 class="section-title">🎮 Featured Games</h2>
-
-    <p class="section-text">
-        Choose a game and start playing!
-    </p>
-
-    <!-- SEARCH -->
+    <p class="section-text">Choose a game and start playing!</p>
 
     <input
         type="text"
@@ -382,8 +357,6 @@ footer {
         placeholder="🔍 Search for a game..."
         oninput="searchGames()"
     >
-
-    <!-- CATEGORIES -->
 
     <div class="categories">
         <button class="category-btn active" onclick="filterGames('all', this)">
@@ -399,13 +372,9 @@ footer {
         </button>
     </div>
 
-    <!-- GAME GRID -->
-
     <div class="games-grid">
 
-        <!-- MUTATION LAB -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/Mutation-Lab/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/Mutation-Lab/">
             <div class="game-image">🧬</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
@@ -415,9 +384,7 @@ footer {
             </div>
         </a>
 
-        <!-- TINY KINGDOM -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/Tiny-kingdom/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/Tiny-kingdom/">
             <div class="game-image">🏰</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
@@ -427,9 +394,7 @@ footer {
             </div>
         </a>
 
-        <!-- AIM TRAINER -->
-        <a class="game-card" data-category="rhythm"
-           href="https://agubcdeuycvuoyad.github.io/Aim-Trainer/">
+        <a class="game-card" data-category="rhythm" href="https://agubcdeuycvuoyad.github.io/Aim-Trainer/">
             <div class="game-image">🎯</div>
             <div class="game-info">
                 <span class="game-category">Rhythm & Reflex</span>
@@ -439,9 +404,7 @@ footer {
             </div>
         </a>
 
-        <!-- WHO AM I -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/Guess-who-I-am-/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/Guess-who-I-am-/">
             <div class="game-image">🧠</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
@@ -451,9 +414,7 @@ footer {
             </div>
         </a>
 
-        <!-- ADDICTIVE TRIVIA -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/Trivia-Rush/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/Trivia-Rush/">
             <div class="game-image">❓</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
@@ -463,9 +424,7 @@ footer {
             </div>
         </a>
 
-        <!-- PASSWORD PANIC -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/PASSWORD-PANIC-/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/PASSWORD-PANIC-/">
             <div class="game-image">🔐</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
@@ -475,9 +434,7 @@ footer {
             </div>
         </a>
 
-        <!-- GEOGRAPHY GUESS -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/geo-hunter/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/geo-hunter/">
             <div class="game-image">🌍</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
@@ -487,21 +444,17 @@ footer {
             </div>
         </a>
 
-        <!-- FLAG GUESS -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/Flag-guessing-game-/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/Flag-guessing-game-/">
             <div class="game-image">🏳️</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
                 <h3>Flag Guess</h3>
-                <p>Can you identify flags from around the world? Test your geography skills!</p>
+                <p>Can you identify flags from around the world?</p>
                 <span class="play-btn">PLAY NOW ▶</span>
             </div>
         </a>
 
-        <!-- VOID RUNNER -->
-        <a class="game-card" data-category="rhythm"
-           href="https://agubcdeuycvuoyad.github.io/Void-Runner/">
+        <a class="game-card" data-category="rhythm" href="https://agubcdeuycvuoyad.github.io/Void-Runner/">
             <div class="game-image">🚀</div>
             <div class="game-info">
                 <span class="game-category">Rhythm & Reflex</span>
@@ -511,21 +464,17 @@ footer {
             </div>
         </a>
 
-        <!-- GUESS WHO -->
-        <a class="game-card" data-category="puzzle"
-           href="https://agubcdeuycvuoyad.github.io/Guess-Who/">
+        <a class="game-card" data-category="puzzle" href="https://agubcdeuycvuoyad.github.io/Guess-Who/">
             <div class="game-image">🕵️</div>
             <div class="game-info">
                 <span class="game-category">Puzzle & Brain</span>
                 <h3>Guess Who?</h3>
-                <p>Guess the secret person using clues, strategy, and detective skills!</p>
+                <p>Guess the secret person using clues and detective skills!</p>
                 <span class="play-btn">PLAY NOW ▶</span>
             </div>
         </a>
 
-        <!-- REFLEX RUSH 3D -->
-        <a class="game-card" data-category="rhythm"
-           href="https://agubcdeuycvuoyad.github.io/Reflex-Rush-3D/">
+        <a class="game-card" data-category="rhythm" href="https://agubcdeuycvuoyad.github.io/Reflex-Rush-3D/">
             <div class="game-image">⚡</div>
             <div class="game-info">
                 <span class="game-category">Rhythm & Reflex</span>
@@ -535,9 +484,7 @@ footer {
             </div>
         </a>
 
-        <!-- TAPSTORM 3D -->
-        <a class="game-card" data-category="rhythm"
-           href="https://agubcdeuycvuoyad.github.io/Tap-Storm-3D/">
+        <a class="game-card" data-category="rhythm" href="https://agubcdeuycvuoyad.github.io/Tap-Storm-3D/">
             <div class="game-image">🌩️</div>
             <div class="game-info">
                 <span class="game-category">Rhythm & Reflex</span>
@@ -547,23 +494,39 @@ footer {
             </div>
         </a>
 
-    </div>
+        <a class="game-card" data-category="rhythm" href="https://agubcdeuycvuoyad.github.io/Dash-Break-3D/">
+            <div class="game-image">💨</div>
+            <div class="game-info">
+                <span class="game-category">Rhythm & Reflex</span>
+                <h3>Dash Break 3D</h3>
+                <p>Dodge barriers, collect energy coins, dash through danger, and survive as the arena gets faster!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
+            </div>
+        </a>
 
-    <!-- NO RESULTS -->
+        <!-- NEW: RIFT RUNNER 3D -->
+        <a class="game-card" data-category="rhythm" href="https://agubcdeuycvuoyad.github.io/RIFT-RUNNER-3D/">
+            <div class="game-image">🌌</div>
+            <div class="game-info">
+                <span class="game-category">Rhythm & Reflex</span>
+                <h3>Rift Runner 3D</h3>
+                <p>Run the rift, dodge the void, jump gaps, dash through danger, collect shards, and build your FLOW combo!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
+            </div>
+        </a>
+
+    </div>
 
     <div class="no-results" id="noResults">
         No games found! 🎮
     </div>
 
-    <!-- QR CODE -->
-
     <section class="qr-section" id="qr">
-
         <h2>📱 Take AY Game Hub With You!</h2>
 
         <p>
-            Scan this QR code with your phone to instantly
-            access AY Game Hub anytime, anywhere.
+            Scan this QR code with your phone to instantly access
+            AY Game Hub anytime, anywhere.
         </p>
 
         <img
@@ -572,40 +535,23 @@ footer {
             alt="QR Code for AY Game Hub"
         >
 
-        <p class="qr-link">
-            🎮 Scan. Play. Have Fun.
-        </p>
-
+        <p class="qr-link">🎮 Scan. Play. Have Fun.</p>
     </section>
 
 </main>
-
-<!-- FOOTER -->
 
 <footer>
     <p>© 2026 AY Game Hub 🎮 | Play. Compete. Win.</p>
 </footer>
 
-<!-- JAVASCRIPT -->
-
 <script>
-
 function searchGames() {
-    const input = document.getElementById("searchInput")
-        .value
-        .toLowerCase()
-        .trim();
-
+    const input = document.getElementById("searchInput").value.toLowerCase().trim();
     const games = document.querySelectorAll(".game-card");
 
     games.forEach(function(game) {
-        const name = game.querySelector("h3")
-            .textContent
-            .toLowerCase();
-
-        const description = game.querySelector("p")
-            .textContent
-            .toLowerCase();
+        const name = game.querySelector("h3").textContent.toLowerCase();
+        const description = game.querySelector("p").textContent.toLowerCase();
 
         if (name.includes(input) || description.includes(input)) {
             game.style.display = "flex";
@@ -630,10 +576,7 @@ function filterGames(category, button) {
     button.classList.add("active");
 
     games.forEach(function(game) {
-        if (
-            category === "all" ||
-            game.dataset.category === category
-        ) {
+        if (category === "all" || game.dataset.category === category) {
             game.style.display = "flex";
         } else {
             game.style.display = "none";
@@ -655,13 +598,8 @@ function checkNoResults() {
         }
     });
 
-    if (visibleGames === 0) {
-        noResults.style.display = "block";
-    } else {
-        noResults.style.display = "none";
-    }
+    noResults.style.display = visibleGames === 0 ? "block" : "none";
 }
-
 </script>
 
 </body>
