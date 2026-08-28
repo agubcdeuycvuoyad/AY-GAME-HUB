@@ -8,11 +8,6 @@
 <title>AY Game Hub</title>
 
 <style>
-
-/* =========================
-   RESET
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -30,10 +25,7 @@ body {
     min-height: 100vh;
 }
 
-
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 header {
     position: sticky;
@@ -48,7 +40,6 @@ nav {
     max-width: 1200px;
     margin: auto;
     padding: 18px 25px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,19 +65,12 @@ nav {
     color: #00e5ff;
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     text-align: center;
     padding: 110px 20px 90px;
-    background: radial-gradient(
-        circle at top,
-        #1d3c66 0%,
-        #0b1020 60%
-    );
+    background: radial-gradient(circle at top, #1d3c66 0%, #0b1020 60%);
 }
 
 .hero h1 {
@@ -109,22 +93,16 @@ nav {
 .hero button {
     margin-top: 30px;
     padding: 15px 30px;
-
     border: none;
     border-radius: 12px;
-
     background: #00e5ff;
     color: #07111f;
-
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
 
-
-/* =========================
-   MAIN
-========================= */
+/* MAIN */
 
 main {
     max-width: 1200px;
@@ -142,21 +120,15 @@ main {
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   SEARCH
-========================= */
+/* SEARCH */
 
 .search-box {
     width: 100%;
     padding: 15px 18px;
-
     border-radius: 12px;
     border: 1px solid #334155;
-
     background: #111827;
     color: white;
-
     font-size: 16px;
     margin-bottom: 25px;
     outline: none;
@@ -166,10 +138,7 @@ main {
     border-color: #00e5ff;
 }
 
-
-/* =========================
-   CATEGORIES
-========================= */
+/* CATEGORIES */
 
 .categories {
     display: flex;
@@ -181,12 +150,9 @@ main {
 .category-btn {
     background: #182238;
     color: white;
-
     border: 1px solid #334155;
     border-radius: 30px;
-
     padding: 12px 18px;
-
     font-size: 15px;
     cursor: pointer;
 }
@@ -198,10 +164,7 @@ main {
     border-color: #00e5ff;
 }
 
-
-/* =========================
-   GAME GRID
-========================= */
+/* GAME GRID */
 
 .games-grid {
     display: grid;
@@ -210,73 +173,51 @@ main {
     width: 100%;
 }
 
-
-/* =========================
-   GAME CARD
-========================= */
+/* GAME CARDS */
 
 .game-card {
     display: flex;
     flex-direction: column;
-
     background: #131c2e;
     border: 1px solid #27344d;
-
     border-radius: 18px;
     overflow: hidden;
-
     text-decoration: none;
     color: white;
-
     transition: 0.25s;
 }
 
 .game-card:hover {
     transform: translateY(-7px);
     border-color: #00e5ff;
-
-    box-shadow:
-        0 12px 35px
-        rgba(0, 229, 255, 0.12);
+    box-shadow: 0 12px 35px rgba(0, 229, 255, 0.12);
 }
 
 .game-image {
     width: 100%;
     height: 160px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 65px;
-
-    background: linear-gradient(
-        135deg,
-        #1e3a5f,
-        #172033
-    );
+    background: linear-gradient(135deg, #1e3a5f, #172033);
 }
 
 .game-info {
     display: flex;
     flex-direction: column;
     flex: 1;
-
     padding: 20px;
 }
 
 .game-category {
     align-self: flex-start;
-
     font-size: 12px;
     font-weight: bold;
-
     background: #263653;
     color: #00e5ff;
-
     padding: 6px 10px;
     border-radius: 20px;
-
     margin-bottom: 15px;
 }
 
@@ -295,22 +236,15 @@ main {
     display: block;
     width: 100%;
     margin-top: auto;
-
     text-align: center;
-
     background: #00e5ff;
     color: #07111f;
-
     padding: 13px;
     border-radius: 10px;
-
     font-weight: bold;
 }
 
-
-/* =========================
-   NO RESULTS
-========================= */
+/* NO RESULTS */
 
 .no-results {
     display: none;
@@ -320,18 +254,13 @@ main {
     padding: 40px;
 }
 
-
-/* =========================
-   QR CODE
-========================= */
+/* QR CODE */
 
 .qr-section {
     max-width: 700px;
     margin: 70px auto 20px;
     padding: 40px 25px;
-
     text-align: center;
-
     background: #131c2e;
     border: 1px solid #27344d;
     border-radius: 20px;
@@ -351,7 +280,6 @@ main {
 .qr-code {
     width: 250px;
     max-width: 80%;
-
     padding: 12px;
     background: white;
     border-radius: 15px;
@@ -363,28 +291,19 @@ main {
     color: #00e5ff !important;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     text-align: center;
     padding: 30px 20px;
-
     color: #64748b;
-
     border-top: 1px solid #26304a;
     margin-top: 40px;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
     nav {
         padding: 15px;
     }
@@ -409,47 +328,30 @@ footer {
     .games-grid {
         grid-template-columns: 1fr;
     }
-
 }
-
 </style>
 </head>
 
 <body>
 
-
-<!-- =========================
-     NAVBAR
-========================= -->
+<!-- NAVBAR -->
 
 <header>
+    <nav>
+        <div class="logo">🎮 AY GAME HUB</div>
 
-<nav>
-
-    <div class="logo">
-        🎮 AY GAME HUB
-    </div>
-
-    <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#games">Games</a>
-        <a href="#qr">QR Code</a>
-    </div>
-
-</nav>
-
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#qr">QR Code</a>
+        </div>
+    </nav>
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
-
-    <h1>
-        PLAY. <span>COMPETE.</span> WIN.
-    </h1>
+    <h1>PLAY. <span>COMPETE.</span> WIN.</h1>
 
     <p>
         Welcome to AY Game Hub! Discover awesome games,
@@ -459,24 +361,17 @@ footer {
     <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
         EXPLORE GAMES 🎮
     </button>
-
 </section>
 
-
-<!-- =========================
-     GAMES
-========================= -->
+<!-- GAMES -->
 
 <main id="games">
 
-    <h2 class="section-title">
-        🎮 Featured Games
-    </h2>
+    <h2 class="section-title">🎮 Featured Games</h2>
 
     <p class="section-text">
         Choose a game and start playing!
     </p>
-
 
     <!-- SEARCH -->
 
@@ -488,374 +383,171 @@ footer {
         oninput="searchGames()"
     >
 
-
     <!-- CATEGORIES -->
 
     <div class="categories">
-
-        <button
-            class="category-btn active"
-            onclick="filterGames('all', this)"
-        >
+        <button class="category-btn active" onclick="filterGames('all', this)">
             🎮 All Games
         </button>
 
-        <button
-            class="category-btn"
-            onclick="filterGames('rhythm', this)"
-        >
+        <button class="category-btn" onclick="filterGames('rhythm', this)">
             ⚡ Rhythm & Reflex
         </button>
 
-        <button
-            class="category-btn"
-            onclick="filterGames('puzzle', this)"
-        >
+        <button class="category-btn" onclick="filterGames('puzzle', this)">
             🧠 Puzzle & Brain
         </button>
-
     </div>
 
-
-    <!-- =========================
-         GAME GRID
-    ========================= -->
+    <!-- GAME GRID -->
 
     <div class="games-grid">
 
-
-        <!-- 🧬 MUTATION LAB -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- MUTATION LAB -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/Mutation-Lab/">
-
             <div class="game-image">🧬</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Mutation Lab</h3>
-
-                <p>
-                    Combine items and discover thousands
-                    of unique creations!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Combine items and discover thousands of unique creations!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🏰 TINY KINGDOM -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- TINY KINGDOM -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/Tiny-kingdom/">
-
             <div class="game-image">🏰</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Tiny Kingdom</h3>
-
-                <p>
-                    Gather resources, build structures,
-                    and grow your kingdom!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Gather resources, build structures, and grow your kingdom!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🎯 AIM TRAINER -->
-
-        <a class="game-card"
-           data-category="rhythm"
+        <!-- AIM TRAINER -->
+        <a class="game-card" data-category="rhythm"
            href="https://agubcdeuycvuoyad.github.io/Aim-Trainer/">
-
             <div class="game-image">🎯</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Rhythm & Reflex
-                </span>
-
+                <span class="game-category">Rhythm & Reflex</span>
                 <h3>Aim Trainer</h3>
-
-                <p>
-                    Test your speed, accuracy, and reflexes
-                    against difficult targets!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Test your speed, accuracy, and reflexes against difficult targets!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🧠 WHO AM I -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- WHO AM I -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/Guess-who-I-am-/">
-
             <div class="game-image">🧠</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Who Am I?</h3>
-
-                <p>
-                    Read the clues and guess the famous person
-                    with as few hints as possible!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Read the clues and guess the famous person with as few hints as possible!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- ❓ ADDICTIVE TRIVIA -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- ADDICTIVE TRIVIA -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/Trivia-Rush/">
-
             <div class="game-image">❓</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Addictive Trivia</h3>
-
-                <p>
-                    Answer challenging questions, build streaks,
-                    and beat your high score!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Answer challenging questions, build streaks, and beat your high score!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🔐 PASSWORD PANIC -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- PASSWORD PANIC -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/PASSWORD-PANIC-/">
-
             <div class="game-image">🔐</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Password Panic</h3>
-
-                <p>
-                    Create the perfect password while surviving
-                    increasingly crazy rules!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Create the perfect password while surviving increasingly crazy rules!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🌍 GEOGRAPHY GUESS -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- GEOGRAPHY GUESS -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/geo-hunter/">
-
             <div class="game-image">🌍</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Geography Guess</h3>
-
-                <p>
-                    Test your knowledge of countries,
-                    capitals, and the world!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Test your knowledge of countries, capitals, and the world!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🏳️ FLAG GUESS -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- FLAG GUESS -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/Flag-guessing-game-/">
-
             <div class="game-image">🏳️</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Flag Guess</h3>
-
-                <p>
-                    Can you identify flags from around the world?
-                    Test your geography skills!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Can you identify flags from around the world? Test your geography skills!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🚀 VOID RUNNER -->
-
-        <a class="game-card"
-           data-category="rhythm"
+        <!-- VOID RUNNER -->
+        <a class="game-card" data-category="rhythm"
            href="https://agubcdeuycvuoyad.github.io/Void-Runner/">
-
             <div class="game-image">🚀</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Rhythm & Reflex
-                </span>
-
+                <span class="game-category">Rhythm & Reflex</span>
                 <h3>Void Runner</h3>
-
-                <p>
-                    Dodge obstacles, collect coins,
-                    and survive as long as possible!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Dodge obstacles, collect coins, and survive as long as possible!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- 🕵️ GUESS WHO -->
-
-        <a class="game-card"
-           data-category="puzzle"
+        <!-- GUESS WHO -->
+        <a class="game-card" data-category="puzzle"
            href="https://agubcdeuycvuoyad.github.io/Guess-Who/">
-
             <div class="game-image">🕵️</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Puzzle & Brain
-                </span>
-
+                <span class="game-category">Puzzle & Brain</span>
                 <h3>Guess Who?</h3>
-
-                <p>
-                    Guess the secret person using clues,
-                    strategy, and detective skills!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Guess the secret person using clues, strategy, and detective skills!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
-
-        <!-- ⚡ REFLEX RUSH 3D -->
-
-        <a class="game-card"
-           data-category="rhythm"
+        <!-- REFLEX RUSH 3D -->
+        <a class="game-card" data-category="rhythm"
            href="https://agubcdeuycvuoyad.github.io/Reflex-Rush-3D/">
-
             <div class="game-image">⚡</div>
-
             <div class="game-info">
-
-                <span class="game-category">
-                    Rhythm & Reflex
-                </span>
-
+                <span class="game-category">Rhythm & Reflex</span>
                 <h3>Reflex Rush 3D</h3>
-
-                <p>
-                    Aim, jump, dodge, catch, and react
-                    before the timer runs out!
-                </p>
-
-                <span class="play-btn">
-                    PLAY NOW ▶
-                </span>
-
+                <p>Aim, jump, dodge, catch, and react before the timer runs out!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
             </div>
-
         </a>
 
+        <!-- TAPSTORM 3D -->
+        <a class="game-card" data-category="rhythm"
+           href="https://agubcdeuycvuoyad.github.io/Tap-Storm-3D/">
+            <div class="game-image">🌩️</div>
+            <div class="game-info">
+                <span class="game-category">Rhythm & Reflex</span>
+                <h3>TapStorm 3D</h3>
+                <p>React fast! Tap, swipe, hold, and double-tap in an intense target storm!</p>
+                <span class="play-btn">PLAY NOW ▶</span>
+            </div>
+        </a>
 
     </div>
-
 
     <!-- NO RESULTS -->
 
@@ -863,16 +555,11 @@ footer {
         No games found! 🎮
     </div>
 
-
-    <!-- =========================
-         QR CODE
-    ========================= -->
+    <!-- QR CODE -->
 
     <section class="qr-section" id="qr">
 
-        <h2>
-            📱 Take AY Game Hub With You!
-        </h2>
+        <h2>📱 Take AY Game Hub With You!</h2>
 
         <p>
             Scan this QR code with your phone to instantly
@@ -893,77 +580,48 @@ footer {
 
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
-
-    <p>
-        © 2026 AY Game Hub 🎮 | Play. Compete. Win.
-    </p>
-
+    <p>© 2026 AY Game Hub 🎮 | Play. Compete. Win.</p>
 </footer>
 
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+<!-- JAVASCRIPT -->
 
 <script>
 
-
 function searchGames() {
-
-    const input = document
-        .getElementById("searchInput")
+    const input = document.getElementById("searchInput")
         .value
         .toLowerCase()
         .trim();
 
-    const games =
-        document.querySelectorAll(".game-card");
+    const games = document.querySelectorAll(".game-card");
 
     games.forEach(function(game) {
-
-        const name =
-            game.querySelector("h3")
+        const name = game.querySelector("h3")
             .textContent
             .toLowerCase();
 
-        const description =
-            game.querySelector("p")
+        const description = game.querySelector("p")
             .textContent
             .toLowerCase();
 
-        if (
-            name.includes(input) ||
-            description.includes(input)
-        ) {
+        if (name.includes(input) || description.includes(input)) {
             game.style.display = "flex";
         } else {
             game.style.display = "none";
         }
-
     });
 
     checkNoResults();
-
 }
 
-
 function filterGames(category, button) {
+    const games = document.querySelectorAll(".game-card");
+    const buttons = document.querySelectorAll(".category-btn");
 
-    const games =
-        document.querySelectorAll(".game-card");
-
-    const buttons =
-        document.querySelectorAll(".category-btn");
-
-    document
-        .getElementById("searchInput")
-        .value = "";
+    document.getElementById("searchInput").value = "";
 
     buttons.forEach(function(btn) {
         btn.classList.remove("active");
@@ -972,7 +630,6 @@ function filterGames(category, button) {
     button.classList.add("active");
 
     games.forEach(function(game) {
-
         if (
             category === "all" ||
             game.dataset.category === category
@@ -981,30 +638,21 @@ function filterGames(category, button) {
         } else {
             game.style.display = "none";
         }
-
     });
 
     checkNoResults();
-
 }
 
-
 function checkNoResults() {
-
-    const games =
-        document.querySelectorAll(".game-card");
-
-    const noResults =
-        document.getElementById("noResults");
+    const games = document.querySelectorAll(".game-card");
+    const noResults = document.getElementById("noResults");
 
     let visibleGames = 0;
 
     games.forEach(function(game) {
-
         if (game.style.display !== "none") {
             visibleGames++;
         }
-
     });
 
     if (visibleGames === 0) {
@@ -1012,9 +660,7 @@ function checkNoResults() {
     } else {
         noResults.style.display = "none";
     }
-
 }
-
 
 </script>
 
